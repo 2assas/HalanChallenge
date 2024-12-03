@@ -18,6 +18,6 @@ dependencies {
     testImplementation(libs.kotlin.test.junit)
     testImplementation(libs.mockito.core)
     testImplementation(libs.kotlinx.coroutines.test)
-    implementation(libs.junit.jupiter)
+    testImplementation(libs.junit.jupiter)
     testImplementation(libs.mockito.kotlin)
 }
