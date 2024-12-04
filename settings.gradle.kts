@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "HalanChallenge"
 include(":app")
 include(":domain")
+include(":data")
