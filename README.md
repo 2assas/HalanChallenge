@@ -1,8 +1,5 @@
 # Twitter OAuth 1.0 Tweeting App
 
-![Screenshot_20241204_190007](https://github.com/user-attachments/assets/92ca16d4-5514-4e93-bf56-c0f0c688ac47)
-
-
 This project demonstrates how to use OAuth 1.0 authentication to post tweets on Twitter using Twitter APIs. The application is built with a modern, clean architecture pattern, leveraging MVI (Model-View-Intent) for state management, DI (Dependency Injection) for loose coupling, and coroutines for asynchronous tasks. The app offers a simple yet modern UI with three buttons to interact with the tweet functionality: **Copy**, **Clear**, and **Post Tweet**.
 
 ## Features
@@ -40,3 +37,7 @@ This project demonstrates how to use OAuth 1.0 authentication to post tweets on 
 
    ```bash
    https://github.com/2assas/HalanChallenge.git
+
+## ScreenShot
+
+![Screenshot_20241204_190007](https://github.com/user-attachments/assets/92ca16d4-5514-4e93-bf56-c0f0c688ac47)
