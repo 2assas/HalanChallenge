@@ -1,4 +1,4 @@
-
+package halan.challenge.domain.useCases
 
 import java.text.Normalizer
 

@@ -14,8 +14,33 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-    }
 
+        // Accessing properties from gradle.properties
+        buildConfigField("String", "BASE_URL", "\"https://api.twitter.com/2/\"")
+        buildConfigField(
+            "String",
+            "CONSUMER_KEY",
+            "\"ZZ2sU4lgEoYb8zUfPtBk4587y\""
+        )
+        buildConfigField(
+            "String",
+            "CONSUMER_SECRET",
+            "\"3kz2bJQgvEa2cqG0F8caSsVTcdPEjXTln4hmby6pXYgcR1GSiX\""
+        )
+        buildConfigField(
+            "String",
+            "ACCESS_TOKEN",
+            "\"1518010215727349762-O42xmzumC0ANLPRWOLjdiT4LNI1n3t\""
+        )
+        buildConfigField(
+            "String",
+            "TOKEN_SECRET",
+            "\"a6UmoDLBoVQTXncYWLPVYDt0BZ5V2AX5uwIpJuTKNwzj2\""
+        )
+    }
+    buildFeatures {
+        buildConfig = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -25,6 +50,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
         targetCompatibility = JavaVersion.VERSION_21
@@ -59,6 +85,8 @@ dependencies {
     implementation(libs.retrofit.gson)
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
+    implementation (libs.okhttp.signpost)
+    implementation (libs.signpost.core)
 
     // Hilt
     implementation(libs.hilt.android)
