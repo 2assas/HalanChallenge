@@ -1,5 +1,6 @@
 # Twitter OAuth 1.0 Tweeting App
-![image](https://github.com/user-attachments/assets/011d327b-7e0b-4d78-89a0-d8df7461c139)
+![image](https://github.com/user-attachments/assets/4109aa20-0be6-4c7e-b6cc-0847e9f8d66e)
+
 
 This project demonstrates how to use OAuth 1.0 authentication to post tweets on Twitter using Twitter APIs. The application is built with a modern, clean architecture pattern, leveraging MVI (Model-View-Intent) for state management, DI (Dependency Injection) for loose coupling, and coroutines for asynchronous tasks. The app offers a simple yet modern UI with three buttons to interact with the tweet functionality: **Copy**, **Clear**, and **Post Tweet**.
 
