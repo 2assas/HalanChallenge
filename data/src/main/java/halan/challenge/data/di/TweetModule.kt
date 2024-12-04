@@ -8,6 +8,7 @@ import halan.challenge.data.dataSource.remote.ApiInterface
 import halan.challenge.data.dataSource.remote.TweetRemoteDataSource
 import halan.challenge.data.repository.TweetRepositoryImpl
 import halan.challenge.domain.repositories.TweetRepository
+import halan.challenge.domain.useCases.CharacterCountUseCase
 import halan.challenge.domain.useCases.PostTweetUseCase
 import javax.inject.Singleton
 
@@ -36,5 +37,9 @@ object TweetModule {
         return PostTweetUseCase(repository)
     }
 
-
+    @Provides
+    @Singleton
+    fun provideCharacterCountUseCase(): CharacterCountUseCase {
+        return CharacterCountUseCase()
+    }
 }
